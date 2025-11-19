@@ -1,3 +1,5 @@
+#brute force:
+
 def second_largest(arr):
     arr.sort()
     largest = arr[-1]
@@ -6,6 +8,8 @@ def second_largest(arr):
             second_largest = arr[i]
             break
     return second_largest
+
+#better:
 
 def better_second_largest(arr):
     largest = arr[0]
@@ -18,6 +22,8 @@ def better_second_largest(arr):
             second_largest = arr[i]
     return second_largest
 
+#optimal:
+
 def optimal_second_largest(arr):
     largest = arr[0]
     second_largest = float('-inf')
@@ -29,6 +35,6 @@ def optimal_second_largest(arr):
             second_largest = arr[i]
     return second_largest
 
-            
-            
+
+
 
