@@ -3,7 +3,7 @@
 #Opimal method:
 def largest_element_in_array(arr):
     largest = arr[0]
-    for i in len(arr):
+    for i in range(len(arr)):
         if arr[i] > largest:
             largest = arr[i]
     return largest
