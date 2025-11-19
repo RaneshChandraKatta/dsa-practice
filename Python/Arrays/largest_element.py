@@ -1,16 +1,11 @@
-def largest_element_arr(arr):
-    largest = 0
-    for i in range(0, len(arr)):
-        if largest < arr[i]:
-            largest = arr[i]
+#Brute force method : Sort the array and print the last element in the array , time complexity - o(NlogN)
 
+#Opimal method:
+def largest_element_in_array(arr):
+    largest = arr[0]
+    for i in len(arr):
+        if arr[i] > largest:
+            largest = arr[i]
     return largest
 
-
-arr = [2,37,65,3,1]
-print(largest_element_arr(arr))
-
-
-
-
-# time complexity - O(N)
+#time complexity - o(n)
