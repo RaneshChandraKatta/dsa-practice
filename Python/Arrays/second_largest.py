@@ -9,8 +9,6 @@ def second_largest(arr):
             break
     return second_largest
 
-#better:
-
 def better_second_largest(arr):
     largest = arr[0]
     for i in range(len(arr)):
@@ -22,7 +20,6 @@ def better_second_largest(arr):
             second_largest = arr[i]
     return second_largest
 
-#optimal:
 
 def optimal_second_largest(arr):
     largest = arr[0]
@@ -34,7 +31,3 @@ def optimal_second_largest(arr):
         elif arr[i] < largest and arr[i] > second_largest:
             second_largest = arr[i]
     return second_largest
-
-
-
-
