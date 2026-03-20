@@ -6,6 +6,4 @@ def largest_element_in_array(arr):
     for i in range(len(arr)):
         if arr[i] > largest:
             largest = arr[i]
-    return largest
-
-#time complexity - o(n)
+    return largest[n-1]
